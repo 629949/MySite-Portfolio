@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+    <link href="./src/output.css" rel="stylesheet">
+<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <body>
+       <div class="flex flex-row justify-around  items-center  w-[100%] bg-[rgb(9,12,27)] ">
+
+        <!-- this is the sidebar -->
+            <div class="flex flex-col border-r-[#090c1b59]  h-screen top-0 left-0 w-[300px]  fixed  items-start justify-start p-6
+                bg-[#ffffff04] shadow-lg text-white">
+
+
+                <h1>Emmanuel Obua</h1>
+                <div class="border-b-1 w-5/9"></div>
+                <div>
+                    <ul class="border-b-1">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+<!-- this is the main content area -->
+            <div class="flex flex-col items-center justify-start text-white ml-[300px]  flex-1 p-0 ">
+
+                <div class="w-full  relative flex p-0 h-[800px] top-0  shadow-[inset_0_0_10px_rgba(9,12,27)]
+  ">
+                <img src="./images/pc.jpg" alt="Logo" class=" "/>
+              <div class="text-center  w-full flex flex-col absolute   ">
+                <h1 class="text-4xl font-bold mb-4">Hello, I'm Emmanuel Obua</h1>
+                <h2 class="text-2xl mb-4">A Passionate Developer</h2>
+
+
+                <button id="scrollbtn" class="bg-[#f9eeee15] text-white   rounded" aria-label="Scroll Down">
+                <i class='bx  bx-arrow-down  w-10 h-10' ></i> 
+
+                </button>
+
+
+                </div>
+
+              </div>
+
+              <div class=" w-5/9 h-[500px] flex flex-row justify-center items-center p-6">
+
+                <div class="mr-6 flex flex-row items-center border-r-2 pr-6">
+                  <h1 class="text-4xl font-bold mb-4">About Me</h1>
+               <i class='bx  bx-arrow-down-right-stroke h-10 w-10 text-[50px]'  ></i> 
+                </div>
+                
+              <div> 
+                   <p>Welcome to my portfolio site!</p>
+                <p>Here you can find my latest projects and contact information.</p>
+                <p>Feel free to reach out if you'd like to collaborate!</p>
+
+              </div>
+
+              </div>
+
+              <!-- this is the technical skills section -->
+              <div class="w-full  flex flex-col justify-around items-center p-16 h-[400px]">
+                <h1 class="text-2xl font-bold mb-4">Technical Skills</h1>
+
+                <div class="h-[500px] w-full border flex flex-row justify-around items-center p-6">
+               <img src="./images/react.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
+                <img src="./images/javascript.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
+                <img src="./images/html.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
+                <!-- <img src="./images/css.svg" alt="Technical Skills" class="mb-4 h-10 w-10" /> -->
+                </div>
+                <div>
+                  
+                </div>
+                
+              </div>
+
+
+              <!-- this is the projects section -->
+              <div class="w-full bg-[#f7f0f0d7] text-black p-6  flex flex-col justify-around items-center">
+
+                <div class="flex flex-row justify-around items-center" >
+<h1 class="text-2xl font-bold mb-4"> <span class="text-4xl">My Work</span> <i class='bx  bx-arrow-right text-[#111010]'  ></i> </h1>
+                
+                <ul class="grid grid-cols-3 items-center justify-around  gap-4 border-[#f5f5f5] h-[400px] w-[700px] rounded-lg shadow-lg  p-4">
+                  <li class="hover:bg-[#e0e0e0] h-[90%] w-[200px] rounded 
+                  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 
+                  "><a href="#">Website Design</a></li>
+                  <li class="hover:bg-[#e0e0e0] h-[90%] w-[200px] rounded 
+                  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 
+                  "><a href="#">WebApplications</a></li>
+                  <li class="hover:bg-[#e0e0e0] h-[90%] w-[200px] rounded 
+                  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 
+                  "><a href="#">UI/UX Design</a></li>
+                </ul>
+
+                </div>
+
+                <i class='bx  bx-chevron-down text-black text-[50px] m-20' ></i> 
+                
+                <div class="shadow-lg rounded-lg w-[80%] h-[500px]">
+                 <section class="flex flex-col justify-center items-center p-4 border-b-2">
+                  <div class="inline-block mb-4">
+                    <h3 class="text-xl font-bold">Project 1</h3>
+                  </div>
+
+                  <div> 
+                    <p class="text-gray-600">A brief description of Project 1.</p>
+
+                    <button title="View Project 1">View Project</button>
+                  </div>
+                </section>
+                 <section>
+                  <div class="inline-block mb-4">
+                    <h3 class="text-xl font-bold">Project 2</h3>
+                  </div>
+
+                  <div> 
+                    <p class="text-gray-600">A brief description of Project 2.</p>
+
+                    <button title="View Project 2">View Project</button>
+                  </div>
+                 </section>
+                  <section>
+                  <div class="inline-block mb-4">
+                    <h3 class="text-xl font-bold">Project 3</h3>
+                  </div>
+
+                  <div> 
+                    <p class="text-gray-600">A brief description of Project 3.</p>
+
+                    <button title="View Project 3">View Project</button>
+                  </div>
+                </section>
+                </div>
+
+              </div>
+
+
+              <!-- this is the contact section -->
+             <div>
+              <h1 class="text-2xl font-bold mb-4">Contact Me</h1>
+              <form class="flex flex-col w-5/9">
+                <input type="text" placeholder="Name" class="mb-4 p-2 border border-gray-300 rounded" />
+                <input type="email" placeholder="Email" class="mb-4 p-2 border border-gray-300 rounded" />
+                <textarea placeholder="Message" class="mb-4 p-2 border border-gray-300 rounded"></textarea>
+                <button type="submit" class="bg-blue-500 text-white p-2 rounded">Send</button>
+              </form>
+             </div>
+            </div>
+
+       </div>
+
+       <script src="script.js"></script>
+    </body>
+</html>
