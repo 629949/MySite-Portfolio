@@ -6,22 +6,21 @@
     <title>Portfolio Site</title>
     <link href="./src/output.css" rel="stylesheet">
 <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <body>
+    <body class="overflow-y-scroll scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-[#090c1b]">
        <div class="flex flex-row justify-around  items-center  w-[100%] bg-[rgb(9,12,27)] ">
 
         <!-- this is the sidebar -->
-            <div class="flex flex-col border-r-[#090c1b59]  h-screen top-0 left-0 w-[300px]  fixed  items-start justify-start p-6
+            <div class="flex flex-col border-r-[#090c1b59]  h-screen top-0 left-0 w-[300px]  fixed  items-center justify-center p-6
                 bg-[#ffffff04] shadow-lg text-white">
 
 
-                <h1>Emmanuel Obua</h1>
-                <div class="border-b-1 w-5/9"></div>
+               
                 <div>
                     <ul class="border-b-1">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class=" transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:underline  "><a href="#hero">Home</a></li>
+                        <li class=" transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:underline  "><a href="#about">About Me</a></li>
+                        <li class=" transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:underline  "><a href="#projects">Projects</a></li>
+                        <li class=" transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:underline  "><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -29,7 +28,7 @@
 <!-- this is the main content area -->
             <div class="flex flex-col items-center justify-start text-white ml-[300px]  flex-1 p-0 ">
 
-                <div class="w-full  relative flex p-0 h-[800px] top-0  shadow-[inset_0_0_10px_rgba(9,12,27)]
+                <div id="hero" class="w-full  relative flex p-0 h-[800px] top-0  shadow-[inset_0_0_10px_rgba(9,12,27)]
   ">
                 <img src="./images/pc.jpg" alt="Logo" class=" "/>
               <div class="text-center  w-full flex flex-col absolute   ">
@@ -81,7 +80,7 @@
 
 
               <!-- this is the projects section -->
-              <div class="w-full bg-[#f7f0f0d7] text-black p-6  flex flex-col justify-around items-center">
+              <div class="w-full bg-[#f7f0f0d7] text-black p-6  flex flex-col justify-around items-center sticky ">
 
                 <div class="flex flex-row justify-around items-center" >
 <h1 class="text-2xl font-bold mb-4"> <span class="text-4xl">My Work</span> <i class='bx  bx-arrow-right text-[#111010]'  ></i> </h1>
@@ -102,7 +101,7 @@
 
                 <i class='bx  bx-chevron-down text-black text-[50px] m-20' ></i> 
                 
-                <div class="shadow-lg rounded-lg w-[80%] h-[500px]">
+                <div class="shadow-lg rounded-lg w-[80%]  h-[400px] overflow-y-scroll p-4">
                  <section class="flex flex-col justify-center items-center p-4 border-b-2">
                   <div class="inline-block mb-4">
                     <h3 class="text-xl font-bold">Project 1</h3>
@@ -136,21 +135,62 @@
                     <button title="View Project 3">View Project</button>
                   </div>
                 </section>
+                 <section>
+                  <div class="inline-block mb-4">
+                    <h3 class="text-xl font-bold">Project 3</h3>
+                  </div>
+
+                  <div> 
+                    <p class="text-gray-600">A brief description of Project 3.</p>
+
+                    <button title="View Project 3">View Project</button>
+                  </div>
+                </section>
+                 <section>
+                  <div class="inline-block mb-4">
+                    <h3 class="text-xl font-bold">Project 3</h3>
+                  </div>
+
+                  <div> 
+                    <p class="text-gray-600">A brief description of Project 3.</p>
+
+                    <button title="View Project 3">View Project</button>
+                  </div>
+                </section>
+                 <section>
+                  <div class="inline-block mb-4">
+                    <h3 class="text-xl font-bold">Project 3</h3>
+                  </div>
+
+                  <div> 
+                    <p class="text-gray-600">A brief description of Project 3.</p>
+
+                    <button title="View Project 3">View Project</button>
+                  </div>
+                </section>
                 </div>
 
               </div>
 
 
               <!-- this is the contact section -->
-             <div>
+             <div id="contact" class="scroll-smooth bg-black w-full flex flex-col justify-around items-center p-16 h-[600px]">
               <h1 class="text-2xl font-bold mb-4">Contact Me</h1>
               <form class="flex flex-col w-5/9">
-                <input type="text" placeholder="Name" class="mb-4 p-2 border border-gray-300 rounded" />
-                <input type="email" placeholder="Email" class="mb-4 p-2 border border-gray-300 rounded" />
-                <textarea placeholder="Message" class="mb-4 p-2 border border-gray-300 rounded"></textarea>
-                <button type="submit" class="bg-blue-500 text-white p-2 rounded">Send</button>
+                <input type="text" placeholder="Name" class="mb-4 p-2 border border-gray-300 rounded w-[200px]" />
+                <input type="email" placeholder="Email" class="mb-4 p-2 border border-gray-300 rounded w-[200px]" />
+                <textarea placeholder="Message" class="mb-4 p-2 border border-gray-300 rounded w-[500px] h-[300px]"></textarea>
+                <button type="submit" class="bg-blue-500 text-white p-2 rounded w-[70px]">Send</button>
               </form>
              </div>
+
+             <div>
+              <h3>Still To Come</h3>
+             </div>
+
+             <div class="w-full bg-[#090c1b] text-white p-6 flex flex-col justify-center items-center">
+                <p>&copy; 2024 Emmanuel Obua. All rights reserved.</p>
+                </div>
             </div>
 
        </div>
