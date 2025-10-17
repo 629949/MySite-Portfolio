@@ -6,7 +6,7 @@
     <title>Portfolio Site</title>
     <link href="./src/output.css" rel="stylesheet">
 <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <body class="overflow-y-scroll scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-[#090c1b]">
+    <body class="overflow-y-scroll scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-[#090c1b] bg-black">
 <!-- 
 <div id="splash" class="fixed inset-0 flex items-center justify-center bg-[#090c1b] z-50 transition-opacity duration-700">
       <div class="flex flex-col items-center">
@@ -37,19 +37,24 @@
             </div>
 
 <!-- this is the main content area -->
-            <div class="flex flex-col items-center justify-start text-white lg:ml-[300px] sm:ml-0 flex-1 p-0 ">
+            <div class="flex flex-col items-center justify-start text-white lg:ml-[300px] sm:ml-0 flex-1 p-0 border-2 
+            w-[100%]
+            ">
 
-                <div id="hero" class="  relative flex p-0 h-[800px] top-0  shadow-[inset_0_0_10px_rgba(9,12,27)]
-                sm:w-[50%] md:w-[75%] lg:w-[100%]  bg-[#090c1b]
+                <div id="hero" class="  relative flex p-0 h-[600px] top-0  shadow-[inset_0_0_10px_rgba(9,12,27)]
+              bg-[#090c1b] 
+
+
   ">
-                <img src="./images/pc.jpg" alt="Logo" class=""/>
-              <div class="text-center  w-full flex flex-col absolute   ">
+                <img src="./images/narutp.jpeg" alt="Logo" class="w-[100%] h-[100%] lg:w-full lg:h-full object-cover  opacity-30
+                "/>
+              <div class="text-center  w-full  flex flex-col absolute  justify-center items-center  ">
                 <h1 class="text-4xl font-bold mb-4">Hello, I'm Emmanuel Obua</h1>
                 <h2 class="text-2xl mb-4">A Passionate Developer</h2>
 
 
-                <button id="scrollbtn" class="bg-[#f9eeee15] text-white   rounded" aria-label="Scroll Down">
-                <i class='bx  bx-arrow-down  w-10 h-10' ></i> 
+                <button id="scrollbtn" class="bg-[#f9eeee15] text-white w-[100px] h-[100px] border  top-10 rounded-full " aria-label="Scroll Down">
+                <i class='bx  bx-arrow-down text-[70px]' ></i> 
 
                 </button>
 
@@ -60,16 +65,16 @@
 
               <!-- this is the about me section -->
 
-              <div class=" w-5/9 h-[500px] flex lg:flex-row justify-center items-center p-6
-
-              sm:flex-col sm:h-[700px] sm:w-[50px] sm:border-b-2 md:text-black">
+              <div class=" w-full h-[300px] flex lg:flex-row justify-center items-center p-6
+                
+            ">
 
                 <div class="mr-6 flex flex-row items-center border-r-2 pr-6">
                   <h1 class="text-4xl font-bold mb-4">About Me</h1>
-               <i class='bx  bx-arrow-down-right-stroke h-10 w-10 text-[50px]'  ></i> 
+               <i class='bx  bx-arrow-down-right-stroke h-10 w-10 text-[50px] hidden lg:block'  ></i> 
                 </div>
                 
-              <div class="sm:w-[50px]"> 
+              <div class="h-full text-center"> 
                    <p>Welcome to my portfolio site!</p>
                 <p>Here you can find my latest projects and contact information.</p>
                 <p>Feel free to reach out if you'd like to collaborate!</p>
@@ -82,14 +87,14 @@
               <div class="  flex flex-col justify-around items-center p-16 h-[400px] w-[700px]">
                 <h1 class="text-2xl font-bold mb-4">Technical Skills</h1>
 
-                <div id="slider" class="h-[300px] w-full  flex flex-row justify-evenly items-center overflow-hidden space-x-10 border-2 text-black">
-               <img id="logoSlide" src="./images/react.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
-                <img id="logoSlide" src="./images/javascript.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
-                <img id="logoSlide" src="./images/html.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
+                <div id="slider" class="h-[300px] w-[70%]  flex flex-row justify-evenly items-center overflow-hidden space-x-10  text-white">
+               <img id="logoSlide" src="./images/react.svg" alt="Technical Skills" class="mb-4 h-5 w-10" />
+                <img id="logoSlide" src="./images/javascript.svg" alt="Technical Skills" class="mb-4 h-5 w-10" />
+                <img id="logoSlide" src="./images/html.svg" alt="Technical Skills" class="mb-4 h-5 w-10" />
 
-                <img id="logoSlide" src="./images/react.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
-                <img id="logoSlide" src="./images/javascript.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
-                <img id="logoSlide" src="./images/html.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
+                <img id="logoSlide" src="./images/react.svg" alt="Technical Skills" class="mb-4 h-5 w-10" />
+                <img id="logoSlide" src="./images/javascript.svg" alt="Technical Skills" class="mb-4 h-5 w-10" />
+                <img id="logoSlide" src="./images/html.svg" alt="Technical Skills" class="mb-4 h-5 w-10" />
 
                 </div>
                 <div>
