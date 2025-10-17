@@ -7,11 +7,22 @@
     <link href="./src/output.css" rel="stylesheet">
 <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <body class="overflow-y-scroll scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-[#090c1b]">
-       <div class="flex flex-row justify-around  items-center  w-[100%] bg-[rgb(9,12,27)] ">
+<!-- 
+<div id="splash" class="fixed inset-0 flex items-center justify-center bg-[#090c1b] z-50 transition-opacity duration-700">
+      <div class="flex flex-col items-center">
+        <img src="./images/logo.png" alt="Logo" class="w-24 h-24 mb-4 animate-pulse">
+        <h1 class="text-2xl font-bold">Loading...</h1>
+        <button id="begin" class="rounded bg-gray-500 text-black">Lets Begin</button>
+      </div>
+    </div> -->
+
+       <div id="maincontent" class="flex flex-row justify-around  items-center  w-[100%] bg-[rgb(9,12,27)] ">
 
         <!-- this is the sidebar -->
-            <div class="flex flex-col border-r-[#090c1b59]  h-screen top-0 left-0 w-[300px]  fixed  items-center justify-center p-6
-                bg-[#ffffff04] shadow-lg text-white">
+            <div class="lg:flex flex-col border-r-[#090c1b59]  h-screen top-0 left-0 w-[300px]  fixed  items-center justify-center p-6
+                bg-[#ffffff04] shadow-lg text-white
+               hidden
+                ">
 
 
                
@@ -26,11 +37,12 @@
             </div>
 
 <!-- this is the main content area -->
-            <div class="flex flex-col items-center justify-start text-white ml-[300px]  flex-1 p-0 ">
+            <div class="flex flex-col items-center justify-start text-white lg:ml-[300px] sm:ml-0 flex-1 p-0 ">
 
-                <div id="hero" class="w-full  relative flex p-0 h-[800px] top-0  shadow-[inset_0_0_10px_rgba(9,12,27)]
+                <div id="hero" class="  relative flex p-0 h-[800px] top-0  shadow-[inset_0_0_10px_rgba(9,12,27)]
+                sm:w-[50%] md:w-[75%] lg:w-[100%]  bg-[#090c1b]
   ">
-                <img src="./images/pc.jpg" alt="Logo" class=" "/>
+                <img src="./images/pc.jpg" alt="Logo" class=""/>
               <div class="text-center  w-full flex flex-col absolute   ">
                 <h1 class="text-4xl font-bold mb-4">Hello, I'm Emmanuel Obua</h1>
                 <h2 class="text-2xl mb-4">A Passionate Developer</h2>
@@ -46,14 +58,18 @@
 
               </div>
 
-              <div class=" w-5/9 h-[500px] flex flex-row justify-center items-center p-6">
+              <!-- this is the about me section -->
+
+              <div class=" w-5/9 h-[500px] flex lg:flex-row justify-center items-center p-6
+
+              sm:flex-col sm:h-[700px] sm:w-[50px] sm:border-b-2 md:text-black">
 
                 <div class="mr-6 flex flex-row items-center border-r-2 pr-6">
                   <h1 class="text-4xl font-bold mb-4">About Me</h1>
                <i class='bx  bx-arrow-down-right-stroke h-10 w-10 text-[50px]'  ></i> 
                 </div>
                 
-              <div> 
+              <div class="sm:w-[50px]"> 
                    <p>Welcome to my portfolio site!</p>
                 <p>Here you can find my latest projects and contact information.</p>
                 <p>Feel free to reach out if you'd like to collaborate!</p>
@@ -63,14 +79,18 @@
               </div>
 
               <!-- this is the technical skills section -->
-              <div class="w-full  flex flex-col justify-around items-center p-16 h-[400px]">
+              <div class="  flex flex-col justify-around items-center p-16 h-[400px] w-[700px]">
                 <h1 class="text-2xl font-bold mb-4">Technical Skills</h1>
 
-                <div class="h-[500px] w-full border flex flex-row justify-around items-center p-6">
-               <img src="./images/react.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
-                <img src="./images/javascript.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
-                <img src="./images/html.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
-                <!-- <img src="./images/css.svg" alt="Technical Skills" class="mb-4 h-10 w-10" /> -->
+                <div id="slider" class="h-[300px] w-full  flex flex-row justify-evenly items-center overflow-hidden space-x-10 border-2 text-black">
+               <img id="logoSlide" src="./images/react.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
+                <img id="logoSlide" src="./images/javascript.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
+                <img id="logoSlide" src="./images/html.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
+
+                <img id="logoSlide" src="./images/react.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
+                <img id="logoSlide" src="./images/javascript.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
+                <img id="logoSlide" src="./images/html.svg" alt="Technical Skills" class="mb-4 h-10 w-10" />
+
                 </div>
                 <div>
                   
@@ -180,7 +200,7 @@
                 <input type="text" placeholder="Name" class="mb-4 p-2 border border-gray-300 rounded w-[200px]" />
                 <input type="email" placeholder="Email" class="mb-4 p-2 border border-gray-300 rounded w-[200px]" />
                 <textarea placeholder="Message" class="mb-4 p-2 border border-gray-300 rounded w-[500px] h-[300px]"></textarea>
-                <button type="submit" class="bg-blue-500 text-white p-2 rounded w-[70px]">Send</button>
+                <button id="sendMsg" type="submit" class="bg-blue-500 text-white p-2 rounded w-[70px]">Send</button>
               </form>
              </div>
 
