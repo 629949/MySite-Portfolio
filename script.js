@@ -39,3 +39,11 @@ sliderImage.forEach((logo, index) => {
 
 //repsonsive nav bar
   
+ const menuBtn = document.getElementById("menuBtn");
+  const items = document.getElementById("menuitems");
+
+  menuBtn.addEventListener("click", () => {
+    items.classList.toggle("hidden");
+
+    console.log("clicked");
+  });

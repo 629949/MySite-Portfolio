@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Site</title>
     <link href="./src/output.css" rel="stylesheet">
-<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <body class="overflow-y-scroll scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-[#090c1b] bg-black">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+    <body class="overflow-y-scroll scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-[#090c1b] ">
 <!-- 
 <div id="splash" class="fixed inset-0 flex items-center justify-center bg-[#090c1b] z-50 transition-opacity duration-700">
       <div class="flex flex-col items-center">
@@ -41,11 +44,25 @@
             w-[100%]
             ">
 
-                <div id="hero" class="  relative flex p-0 h-[600px] top-0  shadow-[inset_0_0_10px_rgba(9,12,27)]
-              bg-[#090c1b] 
+           
+
+                <div id="hero" class="  relative flex p-0 h-[600px] items-center justify-center   shadow-[inset_0_0_10px_rgba(9,12,27)]
+              bg-[#090c1b]   ">
+
+<div class="fixed flex  flex-col  top-1  lg:hidden w-[90%]  bg-black  z-50 opacity-40 border ">
+  <button id="menuBtn" class="focus:outline-none w-[20%] block border items-end bg-white">
+    <i class='bx bx-menu-right text-4xl'></i>
+  </button>
 
 
-  ">
+<ul id="menuitems" class="hidden flex-col mt-2 bg-[#090c1b] p-4 border rounded shadow-lg absolute top-16 right-4 z-30">
+  <li class="mb-2"><a href="#hero">Home</a></li>
+  <li class="mb-2"><a href="#about">About Me</a></li>
+  <li class="mb-2"><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+
                 <img src="./images/narutp.jpeg" alt="Logo" class="w-[100%] h-[100%] lg:w-full lg:h-full object-cover  opacity-30
                 "/>
               <div class="text-center  w-full  flex flex-col absolute  justify-center items-center  ">
@@ -222,6 +239,7 @@
 
        </div>
 
-       <script src="script.js"></script>
     </body>
+       <script src="script.js"></script>
+
 </html>
