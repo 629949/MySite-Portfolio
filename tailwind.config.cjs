@@ -13,8 +13,13 @@ module.exports = {
       },
 
       animation: {
-        fadeInScale: 'fadeInScale 2s ease-in-out forwards',
+        fadeInScale: 'fadeInScale 1s ease-in-out forwards',
       },
+
+      slide: {
+        from: { translate: '0%' },
+        to: { translate: '100%' },
+      }
     },
   },
   plugins: [require('tailwind-scrollbar')],
