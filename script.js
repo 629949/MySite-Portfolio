@@ -47,3 +47,13 @@ sliderImage.forEach((logo, index) => {
 
     console.log("clicked");
   });
+
+
+  let splash = document.getElementById("splash");
+  document.addEventListener('DOMContentLoaded', (e) =>{
+   
+    setTimeout(() => {
+      splash.style.opacity = '0';
+    }, 2000);
+
+  })
