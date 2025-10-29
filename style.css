@@ -49,11 +49,37 @@ body {
 }
 
 .header {
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    width: 80%;
+    padding: 10px;
+    
 }
 
 /* contact button */
 .cta-button {
     background-color: white;
     color: black;
+}
+
+.what-i-do {
+    border: 1px solid white;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #ffffff1f;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.tech-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tech-list li {
+    background: #ffffff1f;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
