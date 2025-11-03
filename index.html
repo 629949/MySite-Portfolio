@@ -23,7 +23,7 @@
 
 
     <!-- title -->
-    <title>Sample Page</title>
+    <title  class="_pageTitle">Emmanuel Gad Obua </title>
     </head>
 
 
@@ -38,43 +38,39 @@
 
 
 <!-- sidebar -->
-        <div class="sidebar">
-
-            <div class="logo">
-            <img src="logo.png" alt="Logo" />
-
-            </div>
-
-
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-            
-        </div>
-
+      
 
 
 
         <!-- main-content -->
-        <div class="main-content">
+        <div class="main-content" >
+
+                <nav>
+
+                    <ul>
+                        <li> <a href="#Home">Home</a></li>
+                        <li> <a href="#Contact">Contact</a></li>
+                        <li> <a href="#Projects">Project</a></li>
+                        <li><a href="#Bio">Bio</a></li>
+                    </ul>
+                    
+                </nav>
 
 
             <!-- start -->
-            <div class="header">
-                <h1><span>Hi, I'm Gad.</span> I build digital products.</h1>
+            <div class="header" id="header">
+                <h1>Hi <span><img src="./images/icons/Wave.png" alt=""></span>, I'm Gad. <br> I build digital products.</h1>
                 <p> im an engineer focusing on webdevelopment, ui/ux design and product management.
                     <br />
                     i provide solutions that help businesses grow and succeed in the digital world.
                 </p>
 
-                <button class="cta-button">Get in Touch</button>
+               <a  href="#contact">Get in touch</a>
+            </div>
+
+            <div class="solve">
+                <p>I solve problems using tools like <span>Javascript</span> and  <span>React</span></p>
+                <p>I use my experience to make you work detail oriented and seamless across all the major platforms</p>
             </div>
 
             <!-- what i do -->
@@ -84,7 +80,7 @@
                         browse_activity
                         </span>
                     <h1>Web Development</h1>
-                    <p>Building responsive and functional websites.</p>
+                    <p>Build fast, secure, and modern web solutions tailored to your business needs — from front-end to full-stack integration.</p>
                 </div>
 
 
@@ -100,7 +96,7 @@
 
                     <h1>Responsive Design</h1>
                     <p>
-
+                        Layouts that adapt flawlessly to any screen size — mobile, tablet, or desktop.
                     </p>
                 </div>
 
@@ -110,7 +106,7 @@
                         swipe_vertical
                         </span>
                     <h1>Version control</h1>
-                    <p>Creating visually appealing designs for various media.</p>
+                    <p>Reliable project tracking and collaboration through Git to ensure every change is documented and recoverable.</p>
                 </div>
              </div>
              
@@ -153,7 +149,16 @@
 
              
 
+        <footer id="contact">
+            <h1>Get in Touch </h1>
+        </footer>
+
+
+        <a href="#header" class="scroll-up">
+            <img src="./images/icons/up.svg" alt="scroll-up">
+        </a>
         </div>
+
         
     </body>
         <script src="script.js"></script>
