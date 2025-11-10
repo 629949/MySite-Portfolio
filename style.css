@@ -9,7 +9,7 @@ body {
     color: black;
     scroll-behavior: smooth;
     font-weight: 200;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family:"Inter", sans-serif;
     background: linear-gradient(135deg, 
         #ff9a76 0%,     /* coral/pink */
         #6b2d5c 30%,    /* purple */
