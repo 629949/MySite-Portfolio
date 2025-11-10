@@ -10,8 +10,14 @@ body {
     scroll-behavior: smooth;
     font-weight: 200;
     font-family: Verdana, Geneva, sans-serif;
-    background: linear-gradient(rgba(1, 4, 17, 0) 2.0415%, rgb(25, 13, 66) 33.3333%, rgb(79, 52, 199), rgb(186, 185, 248));
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, 
+        #ff9a76 0%,     /* coral/pink */
+        #6b2d5c 30%,    /* purple */
+        #1a1a2e 60%,    /* dark blue */
+        #0f4c75 100%    /* teal */
+    );
+    min-height: 100vh;
+    background-size: auto;
 
 }
 
@@ -27,7 +33,7 @@ nav {
     width: 100%;
     position: fixed;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 10px;
     background-color: rgba(255, 255, 255, 0.11);
     top: 0;
@@ -37,11 +43,16 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    border: 1px solid rgba(255, 255, 255, 0.253);
+    border: 1px solid rgba(255, 255, 255, 0.801);
     width: 20%;
     height: 100%;
     justify-content: center;
     border-radius: 10px;
+   
+}
+
+nav h1{
+   margin-left: 20px;
 }
 
 
@@ -57,8 +68,20 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    color: gree;
+    color: green;
 }
+
+
+nav a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+
+
 
 
 /* .splash-screen */
@@ -163,6 +186,7 @@ background: linear-gradient(135deg, rgb(28,110,164) 0%, rgb(35,136,203) 38%, rgb
     height: 300px;
     margin: 10px;
     padding: auto;
+    color: white;
     
 }
 
@@ -190,29 +214,41 @@ background: linear-gradient(135deg, rgb(28,110,164) 0%, rgb(35,136,203) 38%, rgb
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap:10px;
+    color: white;
+}
+
+.technologies {
+    width: 100%;
+    display: flex; /* Changed from block to flex for centering */
+    justify-content: center; /* Centers the list horizontally */
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
 }
 
 .tech-list {
-    list-style-type: none;
-    padding: 0;
-    /* display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); */
-    width:80%
-
+    list-style: none;
+    width: 80%;
+    padding: 0; /* Remove default padding */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Creates responsive columns */
+    gap: 20px; /* Space between items */
+    /* Remove grid-row: 1 - this doesn't work the way you're using it */
 }
 
 .tech-list li {
-    background: #ffffff1f;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tech-list li img {
-    height: 20px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
+    /* Keeps aspect ratio */
 }
+
+
 
 
 
@@ -220,8 +256,13 @@ background: linear-gradient(135deg, rgb(28,110,164) 0%, rgb(35,136,203) 38%, rgb
 .cards {
     height: 350px;
     border: 1px solid white;
-    background-color: #ffffff1f;
+    background-color: rgba(255, 255, 255, 0.062);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .cards h1 {
@@ -230,8 +271,16 @@ background: linear-gradient(135deg, rgb(28,110,164) 0%, rgb(35,136,203) 38%, rgb
     font-size: 24px;
     font-weight: bold;
     color: rgb(7, 156, 15);
+    top: 0;
 }
 
+
+.cards img{
+    height: 50px;
+    width: 50px;
+    top: 0;
+
+}
 
 
 .menu {
@@ -249,4 +298,9 @@ footer {
 
 .scroll-up {
     border: 1px solid white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+
 }
