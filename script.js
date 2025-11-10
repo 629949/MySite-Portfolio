@@ -4,9 +4,9 @@ let mylogo = document.querySelector(".logo");
 
 window.addEventListener("scroll", ()=>{
     if(window.scrollY > 350){
-        mylogo.style.color = "white";
-    } else {
         mylogo.style.color = "black";
+    } else {
+        mylogo.style.color = "white";
     }
 
      if(window.scrollY > 350){
@@ -38,3 +38,14 @@ scrollUp.AddEventListner("click", ()=>{
         behavior: "smooth"
     })
 })
+
+let nav = document.getElementById("navbar");
+
+window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 350){
+        nav.style.backgroundColor = "white";
+    } else {
+        nav.style.backgroundColor = document.body.style.backgroundColor;
+    }
+}
+)
