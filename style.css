@@ -244,9 +244,9 @@ text-transform: lowercase;
     align-items: center;
 }
 
-.tech-list li img {
-    height: 100px;
-    width: 100px;
+.tech-list img {
+    height: 30px;
+    width: 30px;
     /* Keeps aspect ratio */
 }
 
