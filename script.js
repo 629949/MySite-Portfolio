@@ -49,3 +49,13 @@ window.addEventListener("scroll", ()=>{
     }
 }
 )
+
+
+let sendbtn = document.getquerySelector(".send-button");
+
+sendbtn.addEventListener("click", ()=>{
+   let msg = document.createElement("Thank you for reaching out! I will get back to you soon.");
+    document.body.appendChild(msg);
+    
+
+})

@@ -28,6 +28,11 @@
 
 
     <!-- title -->
+
+
+    <!-- title image -->
+     <link rel="icon" type="image/png" href="./images/logoimage.jpeg"/>
+
     <title  class="_pageTitle">Emmanuel Gad Obua </title>
     </head>
 
@@ -36,10 +41,9 @@
         
         <!-- splash-screen -->
 
-<div class="splash-screen">
-    <h1>Element of Design</h1>
+<canvas id="canvas"></canvas>
 
-</div>
+        <!-- end splash-screen -->
 
 
 <!-- sidebar -->
@@ -62,31 +66,31 @@
                         <li><a href="#Bio">Bio</a></li>
                     </ul>
 
-                     <a  href="#contact">Get in touch</a>
+                     <a  href="#contact" class="getintouch">Get in touch</a>
                     
                 </nav>
 
 
             <!-- start -->
             <div class="header" id="header">
-                <h1>Hi <span><img src="./images/icons/Wave.png" alt=""></span> I'm Gad. <br> I build digital products.</h1>
-                <p> im an engineer focusing on webdevelopment, ui/ux design and product management.
+                <h1 data-aos="fade-up">Hi <span><img src="./images/icons/Wave.png" alt=""></span> I'm Gad. <br> I build digital products.</h1>
+                <p data-aos="fade-up"> im an engineer focusing on webdevelopment, ui/ux design and product management.
                     <br />
                     i provide solutions that help businesses grow and succeed in the digital world.
                 </p>
 
-               <a  href="#contact">Get in touch</a>
+               <a  href="#contact" data-aos="fade-up">Get in touch</a>
             </div>
 
-            <div class="solve">
-                <h3>Build scalable solutions</h3>
-                <p>I solve problems using tools like <span>Javascript</span> and  <span>React</span></p>
-                <p>I use my experience to make you work detail oriented and seamless across all the major platforms</p>
+            <div class="solve" data-aos="fade-up">
+                <h3 data-aos="fade-up">Build scalable solutions</h3>
+                <p>I solve problems using tools like <span data-aos="fade-up">Javascript</span> and  <span data-aos="fade-up">React</span></p>
+                <p data-aos="fade-up">I use my experience to make you work detail oriented and seamless across all the major platforms</p>
             </div>
 
             <!-- what i do -->
              <div class="what-i-do">
-                <div class="cards">
+                <div class="cards" data-aos="fade-up">
                         <span class="material-symbols-outlined">
                         browse_activity
                         </span>
@@ -95,14 +99,14 @@
                 </div>
 
 
-                <div class="cards">
+                <div class="cards" data-aos="fade-up">
                      <img src="./images/icons/check.svg" alt="check">
                     <h1>UI/UX Design</h1>
                     <p>Creating user-friendly interfaces and experiences.</p>
                 </div>
 
 
-                <div class="cards">
+                <div class="cards" data-aos="fade-up">
                     <img src="./images/icons/check.svg" alt="check">
 
                     <h1>Responsive Design</h1>
@@ -112,7 +116,7 @@
                 </div>
 
 
-                <div class="cards">
+                <div class="cards" data-aos="fade-up">
                       <img src="./images/icons/github.svg" alt="">
                     <h1>Version control</h1>
                     <p>Reliable project tracking and collaboration through Git to ensure every change is documented and recoverable.</p>
@@ -120,6 +124,31 @@
              </div>
              
 
+
+             <div class="projects" id="Projects">
+                <h1 data-aos="fade-up">Projects</h1>
+
+                <div class="project-cards">
+
+                    <div class="project-card" data-aos="fade-up">
+                        <img src="./images/project1.png" alt="project1">
+                        <h2>Project Title 1</h2>
+                        <p>Brief description of Project 1.</p>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up">
+                        <img src="./images/project2.png" alt="project2">
+                        <h2>Project Title 2</h2>
+                        <p>Brief description of Project 2.</p>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up">
+                        <img src="./images/project3.png" alt="project3">
+                        <h2>Project Title 3</h2>
+                        <p>Brief description of Project 3.</p>
+                
+             </div>
+        </div>
              
 
 
@@ -148,16 +177,20 @@
                 <h2>Let's work together</h2>
                 <p>Have a project in mind? Let's connect and bring your ideas to life. Reach out today and let's start the conversation.</p>
                  <a href="mailto: gademma54@gmail.com">Email Me</a>
+                 <a href="" target="_blank">Github</a>
+                <a href="" target="_blank">LinkedIn</a>
+                <a href="" target="_blank">Twitter</a>
+
                 </div>
                 
 
                     <div class="form-container">
 
                     <form action="send">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
+                   Name: <input type="text" placeholder="Your Name" required>
+                   Email: <input type="email" placeholder="Your Email" required>
+                   Message: <textarea placeholder="Your Message" required></textarea>
+                    <button  class="send-button">Send Message</button>
                 </form>
 
                 </div>
