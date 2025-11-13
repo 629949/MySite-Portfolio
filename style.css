@@ -13,6 +13,7 @@ body {
     background-image: url("./images/bg.jpg");
     background-size: auto;
 
+
 }
 
 
@@ -42,6 +43,26 @@ nav ul {
    
 }
 
+@media (max-width: 991px) {
+    nav ul {
+       display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+       display: none;
+    }
+}
+
+
+
+nav div{
+    @media (max-width: 768px) {
+        display: flex;
+        margin-left: 20px;}
+}
+
 nav h1{
    margin-left: 20px;
 }
@@ -69,6 +90,11 @@ nav a {
     text-decoration: none;
     color: white;
     margin-right: 10px;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        margin-right: 25px;
+    }
 }
 
 
@@ -118,7 +144,8 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    width: 80%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.342);
 }
 
 
@@ -194,6 +221,11 @@ color: white;
     display : block;
     align-content: center;
     justify-items: center;
+
+    @media (max-width: 768px) {
+        height: auto;
+        text-align: center;
+    }
     
 }
 
@@ -227,12 +259,12 @@ color: white;
     align-items: center;
     flex-direction: column;
     margin: 20px;
-    height: 400px;
+    color: white;
 }
 
 .tech-list {
     list-style: none;
-    width: 80%;
+    width: 100%;
     padding: 0; /* Remove default padding */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Creates responsive columns */
@@ -265,6 +297,14 @@ color: white;
     color: white;
 }
 
+@media (max-width: 768px) {
+    .what-i-do {
+        grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+        width: 100%;
+        border: 1px solid white;
+    }
+}
+
 
 
 .cards {
@@ -279,6 +319,22 @@ color: white;
     align-items: center;
 
 }
+
+@media (max-width: 768px) {
+    .cards {
+        width: 90%; /* Adjust card width for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .cards {
+        width: 100%; /* Full width on very small screens */
+    }
+}
+
 
 .cards h1 {
     text-align: center;
@@ -307,30 +363,54 @@ color: white;
 
 
 .projects {
-    background-image: url("./images/screenshot.png");
-    background-size: (70%, 70%);
+    /* background-image: url("./images/screenshot.png"); */
+    background-size: (100%, 100%);
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 500px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 768px) {
+        height: auto;
+        text-align: left;
+        background-image: none;
+
+    }
+   
 }
 
-.menu {
-    border-top-right-radius: 100px;
-    /* border: 2px solid white; */
-    height: 100%;
+.project-cards{
+    display: block;
+    justify-items: center;
+    align-content: center;
+    top: 50px;
+    margin: 20px;
 }
+
+
 
 footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.342);
     width: 100%;
-    height: 500px;
     overflow: visible;
-    z-index: inherit;
     display: block;
     justify-items: center;
     align-content: center;
     color: white;
+
+    @media (max-width: 768px) {
+        
+        text-align: center;
+
+    }
    
 }
 
@@ -354,6 +434,13 @@ footer {
     width: 50%;
 }
 
+#contact a img {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+    padding: 0;
+}
+
 
 .footer-content {
     display: flex;
@@ -361,13 +448,24 @@ footer {
     justify-content: center;
     align-items: center;
     color: white;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
 
+@media (max-width: 480px) {
+    .footer-content {
+        flex-direction: column;
+    }
 }
 
 form {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 90%;
 }
 
 input,textarea {
@@ -419,6 +517,12 @@ form button {
     right: 20px;
     height: 50px;
     width: 50px;
+
+    @media (max-width: 768px) {
+        height: 40px;
+        width: 40px;
+        left: 10px;
+    }
 
 }
 
