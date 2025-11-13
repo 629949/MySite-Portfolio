@@ -156,6 +156,8 @@ nav a {
     top: 520px;
     margin: 20px;  
     height: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .header h1 {
@@ -206,6 +208,18 @@ color: white;
 }
 
 
+.header-image img {
+    display: block;
+    justify-items: center;
+    align-content: center;
+    margin-left: 50px;
+    height: 480px;
+    width: 280px;
+    top: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
 
 
 
@@ -220,6 +234,7 @@ color: white;
     display : block;
     align-content: center;
     justify-items: center;
+    top: 60px;    
 
     @media (max-width: 768px) {
         height: auto;
@@ -407,6 +422,11 @@ color: white;
     border-bottom: 1px solid green;
 }
 
+.project-card p {
+    font-size: 18px;
+    font-weight: 200;
+    width: 80%;
+}
 
 footer {
     width: 100%;
