@@ -59,12 +59,12 @@
                         <h1 class="logo">Gad <span>DEV.</span></h1>
                     </div>
 
-                    <!-- <ul data-aos="fade-up"  >
+                    <ul data-aos="fade-up"  >
                         <li> <a href="#Home">Home</a></li>
                         <li> <a href="#Contact">Contact</a></li>
                         <li> <a href="#Projects">Project</a></li>
                         <li><a href="#Bio">Bio</a></li>
-                    </ul> -->
+                    </ul>
 
                      <a  href="#contact" class="getintouch">Get in touch</a>
                     
@@ -75,8 +75,8 @@
             <div class="header" id="header">
 
                 <div class="header-text">
-                <h1 data-aos="fade-up">Hi I'm Gad. <br><span >I'm a web developer.</span> </h1>
-                <p data-aos="fade-up"> im an engineer focusing on webdevelopment, ui/ux design and product management.
+                <h1 data-aos="fade-up">Gad Obua. <br><span >Software developer.</span> </h1>
+                <p data-aos="fade-up"> im an developer focusing on web applications, ui/ux design and product management.
                     <br />
                     i provide solutions that help businesses grow and succeed in the digital world.
                 </p>
@@ -87,6 +87,21 @@
                <!-- <div class="header-image" data-aos="fade-up">
                 <img src="./images/me2.jpg" alt="">
                </div> -->
+            </div>
+
+
+            <div class="about" id="Bio" data-aos="fade-up">
+
+                <div class="img-container">
+
+                <img src="./images/me2.jpg" alt="about icon"  data-aos="fade-up"/>
+
+                </div>
+                
+                <div class="about-text" data-aos="fade-up">
+                <h4>About</h4>
+                <p>I’m a focused and detail-driven developer who enjoys building clean, functional, and reliable digital products. I work across web development, UI/UX, and version control to deliver solutions that look good and perform even better. I like solving real problems with practical approaches, keeping things efficient rather than overcomplicated. My goal is simple: create products that work smoothly, scale properly, and give users a seamless experience from start to finish.</p>
+                </div>
             </div>
 
             <div class="solve" data-aos="fade-up">
@@ -138,49 +153,51 @@
                 <div class="project-cards">
 
                     <div class="project-card" data-aos="fade-up">
+
+                        <img src="./images/uiux.png" alt="E-Health UI/UX">
                     
                         <h2>E-Health UI/UX </h2>
                         <p>Contributed to the user interface and user experience design of E-Health, a digital healthcare platform aimed at improving accessibility to medical services. The project focused on creating an intuitive, patient-centered design that simplifies complex healthcare processes.</p>
 
-                        <ul>
+                        <!-- <ul>
                             <li>
                                 Designed user-friendly interfaces for patient registration, appointment booking, and medical record management
                             </li>
                             <li>Conducted user research and usability testing to gather feedback and refine design elements</li>
                             <li>Collaborated with developers to ensure seamless implementation of design concepts into functional web pages</li>
                             <li>Utilized design tools such as Figma and Adobe XD to create wireframes, prototypes, and high-fidelity mockups</li>
-                        </ul>
+                        </ul> -->
                         <a href="https://www.figma.com/design/tw2onaUBu9t3sxCvV5opwv/Tech-Titans-Project-Design?node-id=0-1&t=u7i968j1W718GGnC-1"  target="_blank">See Site</a>
                     </div>
 
                     <div class="project-card" data-aos="fade-up">
-                     
+                     <img src="./images/ehealth.png" alt="E-Health Webapp">
                         <h2>E-Health Webapp</h2>
                         <p>Developed a responsive web application for E-Health, a comprehensive digital healthcare platform designed to bridge the gap between patients and healthcare providers. The application enables users to access medical services conveniently through their web browsers.</p>
 
-                        <ul>
+                        <!-- <ul>
                             <li>Built a fully responsive web application using modern web technologies, ensuring optimal performance across all devices and screen sizes</li>
                             <li>Developed interactive features including real-time appointment scheduling, medical history tracking, and prescription management</li>
                             <li>Implemented responsive design using CSS media queries to adapt layouts from desktop to mobile devices</li>
                             <li>Integrated API endpoints for seamless communication between frontend and backend services</li>
                          
-                        </ul>
+                        </ul> -->
                         <a href="https://e-health-care-app.vercel.app/" target="_blank">See Site</a>
                     </div>
 
                     <div class="project-card" data-aos="fade-up">
-                     
+                     <img src="./images/funbarister .png" alt="Fun-Barista Website">
                         <h2>Fun-Barista Website</h2>
                         <p>Designed and developed a fully responsive website for a coffee shop/barista business as a solo project. The website serves as a digital storefront, showcasing the café's offerings, ambiance, and brand identity to attract and engage customers.</p>
 
-                        <ul>
+                        <!-- <ul>
                             <li>Designed and developed the complete website from concept to deployment, handling both frontend design and development </li>
                         <li>Created an aesthetically appealing interface that reflects the café's brand identity and coffee culture</li>
                         <li>Implemented interactive features including menu display, location/contact information, and business hours</li>
                         <li>Deployed the website to a live hosting environment and configured domain settings</li>
                 
 
-                        </ul>
+                        </ul> -->
                         <a href="https://funbaristaacademy.netlify.app/" target="_blank">See Site</a>
 
                         
@@ -237,18 +254,22 @@
 
                     <div class="form-container">
 
-                    <form action="send">
-                   Name: <input type="text" placeholder="Your Name" required>
-                   Email: <input type="email" placeholder="Your Email" required>
-                   Message: <textarea placeholder="Your Message" required></textarea>
-                    <button  class="send-button">Send Message</button>
+                    <form action="https://formspree.io/f/xpwknlvr" method="POST" id="contact-form">
+                   Name: <input type="text" placeholder="Your Name" name="name" required>
+                   Email: <input type="email" placeholder="Your Email" name="email" required>
+                   Message: <textarea placeholder="Your Message" name="message" required></textarea>
+                    <button  class="send-button" type="submit">Send Message</button>
                 </form>
 
+                </div>
+
+                <div class="popup hidden" id="popup">
+                    <p>Message sent successfully</p>
                 </div>
                
                 </div>
 
-                <p>© 2024 Emmanuel Gad Obua. All rights reserved.</p>
+                <p>© 2025 Gad Obua. All rights reserved.</p>
 
         </footer>
 
@@ -257,7 +278,6 @@
             <img src="./images/icons/up.svg" alt="scroll-up">
         </a>
 
-    </body>
         <script src="script.js"></script>
 
 
@@ -266,4 +286,6 @@
         <script>
         AOS.init();
         </script>
+    </body>
+        
 </html>
