@@ -79,14 +79,12 @@ if (filters) {
         filters.querySelectorAll('button').forEach((item) => {
             item.setAttribute('aria-pressed', String(item === button));
         });
-        let visible = 0;
         projects.forEach((project) => {
             project.hidden = button.dataset.filter !== 'all' && project.dataset.category !== button.dataset.filter;
-            if (!project.hidden) visible += 1;
         });
         const grid = document.querySelector('.project-grid');
         grid.hidden = ![...grid.querySelectorAll('[data-category]')].some((project) => !project.hidden);
-        document.getElementById('filter-status').textContent = `${String(visible).padStart(2, '0')} ${visible === 1 ? 'project' : 'projects'} shown`;
+        document.getElementById('filter-status').textContent = button.dataset.filter === 'all' ? 'Showing all projects' : `Showing ${button.textContent.trim().toLowerCase()} projects`;
     });
 }
 
